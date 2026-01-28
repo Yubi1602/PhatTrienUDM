@@ -1,0 +1,115 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "title": "a title",
+      "views": "1000",
+      "isDeleted": false,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "3",
+      "title": "dia dia",
+      "views": "100",
+      "isDeleted": false
+    },
+    {
+      "id": "4",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "5",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "6",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "7",
+      "title": "dia dia",
+      "views": "111",
+      "isDeleted": true
+    },
+    {
+      "id": "8",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "9",
+      "title": "ddd",
+      "views": "11",
+      "isDeleted": true
+    },
+    {
+      "id": "10",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "11",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "12",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "13",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "14",
+      "title": "",
+      "views": "",
+      "isDeleted": true
+    },
+    {
+      "id": "15",
+      "title": "sita",
+      "views": "1",
+      "isDeleted": true
+    },
+    {
+      "id": "16",
+      "title": "qqqq",
+      "views": "1111",
+      "isDeleted": true
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

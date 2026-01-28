@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Posts & Comments</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 30px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f8f9fa; }
+        .form-box { background: #f4f4f4; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        input[type="button"] { cursor: pointer; padding: 4px 8px; }
+    </style>
+</head>
+<body>
+
+    <h2>Quản lý Posts</h2>
+    <div class="form-box">
+        ID: <input type="text" id="id_txt" readonly placeholder="Auto" style="width:50px; background:#e9ecef;">
+        Title: <input type="text" id="title_txt">
+        Views: <input type="text" id="view_txt">
+        <input type="button" value="Save" onclick="Save()">
+        <input type="button" value="Clear" onclick="document.getElementById('id_txt').value=''">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Title</th><th>Views</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="body_table"></tbody>
+    </table>
+
+    <hr>
+
+    <h2>Quản lý Comments</h2>
+    <div class="form-box">
+        ID: <input type="text" id="comment_id_txt" readonly placeholder="Auto" style="width:50px; background:#e9ecef;">
+        Post ID: <input type="text" id="postId_txt">
+        Nội dung: <input type="text" id="comment_txt" style="width:250px;">
+        <input type="button" value="Save" onclick="SaveComment()">
+        <input type="button" value="Clear" onclick="document.getElementById('comment_id_txt').value=''">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Nội dung</th><th>Post ID</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="body_comments"></tbody>
+    </table>
+
+    <script src="Baituan2.js"></script>
+</body>
+</html>
