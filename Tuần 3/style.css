@@ -1,0 +1,41 @@
+/* style.css */
+
+/* CSS cho hình ảnh sản phẩm */
+.img-product {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Yêu cầu 2: Logic hiển thị Description khi Hover */
+.product-row {
+    position: relative;
+}
+
+.description-tooltip {
+    display: none; /* Mặc định ẩn mô tả */
+    position: absolute;
+    background-color: #212529; /* Màu nền tối giống Bootstrap */
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 1050; /* Nằm trên cùng */
+    width: 280px;
+    left: 10%;
+    top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    font-size: 0.85rem;
+    font-weight: normal;
+    pointer-events: none; /* Tránh cản trở chuột */
+}
+
+/* Hiển thị tooltip khi di chuột vào dòng tương ứng */
+.product-row:hover .description-tooltip {
+    display: block;
+}
+.img-thumbnail {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
